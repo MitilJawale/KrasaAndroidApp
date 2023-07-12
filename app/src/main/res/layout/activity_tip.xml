@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tip">
+
+    <ListView
+        android:id="@+id/mylistView"
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="406dp"
+        android:layout_height="98dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Tips From Doctor"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp" />
+</RelativeLayout>

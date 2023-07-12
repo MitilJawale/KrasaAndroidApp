@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        >
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:orientation="vertical">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="#C6CAC6">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="230dp"
+                   android:layout_gravity="center"
+                   android:background="@drawable/soon"
+                   android:orientation="vertical">
+
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="215dp"
+                   android:layout_marginRight="10dp"
+                   android:orientation="vertical">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="135dp"
+                       android:layout_marginBottom="10dp"
+                       android:orientation="horizontal">
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_gravity="center"
+                           android:layout_marginRight="5dp"
+                           android:layout_weight="1"
+                           android:orientation="vertical">
+
+                           <RelativeLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:onClick="proced">
+
+                               <ImageView
+                                   android:id="@+id/procedure"
+                                   android:layout_width="50dp"
+                                   android:layout_height="50dp"
+                                   android:layout_centerInParent="true"
+                                   android:src="@drawable/procedure" />
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/procedure"
+                                   android:layout_centerHorizontal="true"
+                                   android:layout_marginTop="10dp"
+                                   android:layout_marginBottom="10dp"
+                                   android:text="Procedure"
+                                   android:textSize="16sp" />
+
+                               <Button
+                                   android:id="@+id/procedureButton"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:layout_alignParentStart="true"
+                                   android:layout_alignParentTop="true"
+                                   android:layout_marginStart="-1dp"
+                                   android:layout_marginTop="153dp"
+                                   android:background="@android:color/transparent" />
+
+                           </RelativeLayout>
+
+                       </androidx.cardview.widget.CardView>
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_gravity="center"
+                           android:layout_marginLeft="5dp"
+                           android:layout_weight="1"
+
+                           android:orientation="vertical">
+
+                           <RelativeLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent">
+
+                               <ImageView
+                                   android:id="@+id/medicalHistory"
+                                   android:layout_width="50dp"
+                                   android:layout_height="50dp"
+                                   android:layout_centerInParent="true"
+                                   android:src="@drawable/medicalhistory" />
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/medicalHistory"
+                                   android:layout_centerHorizontal="true"
+                                   android:layout_marginTop="10dp"
+                                   android:layout_marginBottom="10dp"
+                                   android:text="Medical History"
+                                   android:textSize="16sp" />
+
+                               <Button
+                                   android:id="@+id/medicalHistoryButton"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:background="@android:color/transparent"
+                                   android:onClick="historymethod" />
+
+                           </RelativeLayout>
+
+                       </androidx.cardview.widget.CardView>
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="135dp"
+                       android:layout_marginBottom="10dp"
+                       android:orientation="horizontal">
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_gravity="center"
+                           android:layout_marginRight="5dp"
+                           android:layout_weight="1"
+                           android:orientation="vertical">
+
+                           <RelativeLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:onClick="mapmethod">
+
+
+                               <Button
+                                   android:id="@+id/mapButton"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:layout_alignParentStart="true"
+                                   android:layout_alignParentTop="true"
+                                   android:layout_marginStart="-1dp"
+                                   android:layout_marginTop="153dp"
+                                   android:background="@android:color/transparent" />
+
+                               <ImageView
+                                   android:id="@+id/map"
+                                   android:layout_width="50dp"
+                                   android:layout_height="50dp"
+                                   android:layout_centerInParent="true"
+                                   android:src="@drawable/map" />
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/map"
+                                   android:layout_centerHorizontal="true"
+                                   android:layout_marginTop="10dp"
+                                   android:layout_marginBottom="10dp"
+                                   android:text="Map"
+                                   android:textSize="16sp" />
+
+                           </RelativeLayout>
+
+                       </androidx.cardview.widget.CardView>
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_gravity="center"
+                           android:layout_marginLeft="5dp"
+                           android:layout_weight="1"
+
+                           android:orientation="vertical">
+
+                           <RelativeLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent">
+
+                               <ImageView
+                                   android:id="@+id/aboutDoctor"
+                                   android:layout_width="50dp"
+                                   android:layout_height="50dp"
+                                   android:layout_centerInParent="true"
+                                   android:src="@drawable/doctor" />
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/aboutDoctor"
+                                   android:layout_centerHorizontal="true"
+                                   android:layout_marginTop="10dp"
+                                   android:layout_marginBottom="10dp"
+                                   android:text="About Doctor"
+                                   android:textSize="16sp" />
+
+                               <Button
+                                   android:id="@+id/aboutDoctorButton"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:background="@android:color/transparent"
+                                   android:onClick="aboutDoctor" />
+
+                           </RelativeLayout>
+
+                       </androidx.cardview.widget.CardView>
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="135dp"
+                       android:layout_marginBottom="10dp"
+                       android:orientation="horizontal">
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_gravity="center"
+                           android:layout_marginRight="5dp"
+                           android:layout_weight="1"
+                           android:orientation="vertical">
+
+                           <RelativeLayout
+                               android:id="@+id/appointmentRL"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:onClick="appointmentmethod">
+
+                               <ImageView
+                                   android:id="@+id/appointments"
+                                   android:layout_width="50dp"
+                                   android:layout_height="50dp"
+                                   android:layout_centerInParent="true"
+                                   android:src="@drawable/appointments" />
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/appointments"
+                                   android:layout_centerHorizontal="true"
+                                   android:layout_marginTop="10dp"
+                                   android:layout_marginBottom="10dp"
+                                   android:text="Appointment"
+                                   android:textSize="16sp" />
+
+                               <Button
+                                   android:id="@+id/appointment"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:layout_alignParentStart="true"
+                                   android:layout_alignParentTop="true"
+                                   android:layout_marginStart="-1dp"
+                                   android:layout_marginTop="153dp"
+                                   android:background="@android:color/transparent" />
+
+                           </RelativeLayout>
+
+                       </androidx.cardview.widget.CardView>
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_gravity="center"
+                           android:layout_marginLeft="5dp"
+                           android:layout_weight="1"
+
+                           android:orientation="vertical">
+
+                           <RelativeLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent">
+
+                               <ImageView
+                                   android:id="@+id/tips"
+                                   android:layout_width="50dp"
+                                   android:layout_height="50dp"
+                                   android:layout_centerInParent="true"
+                                   android:src="@drawable/tips" />
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/tips"
+                                   android:layout_centerHorizontal="true"
+                                   android:layout_marginTop="10dp"
+                                   android:layout_marginBottom="10dp"
+                                   android:text="Care Tips"
+                                   android:textSize="16sp" />
+
+                               <Button
+                                   android:id="@+id/tipsButton"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:background="@android:color/transparent"
+                                   android:onClick="tip" />
+
+                           </RelativeLayout>
+
+                       </androidx.cardview.widget.CardView>
+                   </LinearLayout>
+
+
+               </LinearLayout>
+
+           </RelativeLayout>
+       </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

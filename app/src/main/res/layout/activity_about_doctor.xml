@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#13052B"
+    tools:context=".aboutDoctor">
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="377dp"
+        android:layout_height="297dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="29dp"
+        android:text="Dr.Vijata Neharkar has 8 years of experience.Her clinic is locate at FC road,Pune.She has completed MBBS from MUHS in 2010.She is a member of Indian Medical Association and Cosmetic Dermatology Society of India."
+        android:textAlignment="center"
+        android:textColor="#D5E876"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="18dp"
+        app:srcCompat="@drawable/doctorbackground" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="-5dp"
+        app:srcCompat="@drawable/doctorpic" />
+
+</RelativeLayout>
